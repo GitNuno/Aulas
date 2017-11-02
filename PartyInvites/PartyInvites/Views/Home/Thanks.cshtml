@@ -1,0 +1,40 @@
+
+<!-- Strongly typed view -->
+<!--Razor faz o render da view em função do modelo: Models/GuestResponse-->
+<!-- The Thanks.cshtml view uses Razor to display content based on the value of the GuestResponse
+properties that I passed to the View method in the RsvpForm action method. -->
+<!-- Model passa a ser do tipo GuestResponse -->
+@model PartyInvites.Models.GuestResponse
+
+@{
+    ViewData["Title"] = "Thanks";
+}
+
+
+<div class="panel panel-success" style="margin-top:2ex;">
+    <div class="panel-heading">
+        <!-- aModel.Name - escreve o valor introduzido no campo nome, guardado no objecto de GuestResponse (processo de binding) -->
+        <h3 class="panel-title">Thank you, @Model.Name !!!</h3>
+    </div>
+
+    <!-- Se valor (atributo WillAttend) guardado no objecto de GuestResponse por processo de binding HTML_GuestResponse.cs for verdade... -->
+    @if (Model.WillAttend == null)
+    {
+        @: Thank you for your answer. When you decide if you can come to the party, give me a call.
+}
+    else if (Model.WillAttend == true)
+    {
+        @: It's great that you are coming to the party. The drinks are already in the fridge.
+}
+    else
+    { // Model.WillAttend == false
+        @: Sorry to hear that you can't make it, but tanks for letting us know.
+}
+
+    <hr />
+    <div class="panel-footer">
+        <!-- Razor referencia a acção  GuestList() de HomeController que foi quem chamou esta View!! -->
+        <a asp-action="GuestList" class="btn btn-primary">See who is coming to the party</a>
+    </div>
+
+</div>

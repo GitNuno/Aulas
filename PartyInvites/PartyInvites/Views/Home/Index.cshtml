@@ -1,0 +1,31 @@
+
+
+@{
+    <!-- se quiser retirar layout, ref. outros layouts na pasta shared(afeta todo site), ou criar/ref. layout na view Home -->
+    // Layout = null;
+    Layout = "_Layout"; // Desnecessario - por defeito!
+    ViewData["Title"] = "Home";
+}
+
+<h2>Home</h2>
+
+<p>@ViewBag.Message World !!!</p>
+<p>@ViewBag.Expression_2</p>
+
+
+<p>We are going to have an exciting party.</p>
+<p>Are you coming to the party? </p>
+
+<!-- Usar sempre a asp-action em vez de <a href>  -->
+<!-- MVC referencia a acção Rsvp() de HomeController que foi quem chamou esta View!! -->
+<!-- Perguntar: Que controlador chamou esta view? -->
+ <a asp-action="Rsvp" class="btn btn-primary">Submit answer</a>
+ <a asp-action="GuestList" class="btn btn-info">See who is coming to the party</a>
+
+
+<br />
+<br />
+<a asp-action="../RegexTest/Index" class="btn btn-info">Go to Regular Expressions Test</a>
+
+
+

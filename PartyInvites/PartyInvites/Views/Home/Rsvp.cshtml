@@ -1,0 +1,57 @@
+
+
+<!--MVC faz o render da view em função do modelo: Models/GuestResponse -->
+<!-- Para poder Ligar os elementos HTML ao objecto Model: EX: Models.GuestResponses.Name-->
+<!-- PartyInvites.Models.GuestResponse -> em _viewImports.cshtml incluí: using PartyInvites.Models -->
+@model GuestResponse
+
+
+@{
+    ViewData["Title"] = "Repondez S'il Vous Plait";
+}
+
+<!-- asp-action="Rsvp":referencía a acção Rsvp  -->
+<form asp-action="Rsvp" method="post">
+    <div class="panel panel-primary" style="margin-top:2ex;">
+        <div class="panel-heading">
+            <h3 class="panel-title">Repondez S'il Vous Plait</h3>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+                <!-- asp-for: atributo tag helper: liga os elementos HTML ao objecto Model: EX: Models.GuestResponses.Name -->
+                <!-- <label asp-for="aModel.Name"> é outra forma de chamar campo Name de GuestResponses -->
+                <!-- para fazer input tenho usar as classes: "class="form-group" + class="form-control" -->
+                <label asp-for="Name">Name:</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Phone">Phone:</label>
+                <input asp-for="Phone" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email">Email:</label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="WillAttend">I will</label>
+                <select asp-for="WillAttend" class="form-control">
+                    <option value="">Choose an option</option>
+                    <option value="true">attend the party</option>
+                    <option value="false">not go the party</option>
+                </select>
+            </div>
+            <!-- to display validation errors to the user -->
+            <div asp-validation-summary="All"></div>
+        </div>
+
+        <div class="panel-footer">
+            <!-- botão submete para esta acção (form) -->
+            <button type="submit" class="btn btn-primary">Submit response</button>
+        </div>
+    </div>
+</form>
+
