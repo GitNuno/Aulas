@@ -8,3 +8,13 @@ C:\programacao_internet\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsSt
 C:\programacao_internet\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.AssemblyInfo.cs
 C:\programacao_internet\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.dll
 C:\programacao_internet\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.pdb
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\bin\Debug\netcoreapp1.1\SportsStore.deps.json
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\bin\Debug\netcoreapp1.1\SportsStore.runtimeconfig.json
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\bin\Debug\netcoreapp1.1\SportsStore.runtimeconfig.dev.json
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\bin\Debug\netcoreapp1.1\SportsStore.dll
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\bin\Debug\netcoreapp1.1\SportsStore.pdb
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.csprojResolveAssemblyReference.cache
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.csproj.CoreCompileInputs.cache
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.AssemblyInfo.cs
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.dll
+C:\programacao_internet\Aulas\Aulas\SportsStore\SportsStore\obj\Debug\netcoreapp1.1\SportsStore.pdb

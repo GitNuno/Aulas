@@ -10756,11 +10756,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\programacao_internet\\SportsStore\\SportsStore\\SportsStore.csproj",
+      "projectUniqueName": "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\SportsStore\\SportsStore.csproj",
       "projectName": "SportsStore",
-      "projectPath": "C:\\programacao_internet\\SportsStore\\SportsStore\\SportsStore.csproj",
+      "projectPath": "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\SportsStore\\SportsStore.csproj",
       "packagesPath": "C:\\Users\\Nuno\\.nuget\\packages\\",
-      "outputPath": "C:\\programacao_internet\\SportsStore\\SportsStore\\obj\\",
+      "outputPath": "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\SportsStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nuno\\AppData\\Roaming\\NuGet\\NuGet.Config",
