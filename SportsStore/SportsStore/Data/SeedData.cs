@@ -10,7 +10,7 @@ namespace SportsStore.Models
         // garante que BD está populada
         public static void EnsurePopulated(IServiceProvider serviceProvider)
         {
-            // 1. vou buscar contexto da BD , utiliza serviço
+            // 
             ApplicationDbContext dbContext = (ApplicationDbContext)serviceProvider.GetService(typeof(ApplicationDbContext));
 
             if (!dbContext.Products.Any())
@@ -23,6 +23,7 @@ namespace SportsStore.Models
 
         private static void EnsureProductsPopulated(ApplicationDbContext dbContext)
         {
+            // nota: Em ApplicationDbContext temos campo: DbSet<Product> Products { get; set; }
             dbContext.Products.AddRange(
                  new Product { Name = "Kayak", Description = "A boat for one person", Category = "Watersports", Price = 275 },
                  new Product { Name = "Lifejacket", Description = "Protective and fashionable", Category = "Watersports", Price = 48.95m },

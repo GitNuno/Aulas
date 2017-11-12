@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace SportsStore.Models
 {
-    // tem que devolver os produtos
+    // permite-me criar qualquer tipo de "repositorio" (neste caso de produtos) a partir desta interface
     public interface IProductRepository
     {
         IEnumerable<Product> Products { get; } // posso implementar com uma lista
+       // +++ aqui aparecem os IEnumerable<MyModels> ???
 
     }
 }

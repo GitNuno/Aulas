@@ -34,10 +34,12 @@ namespace SportsStore
             // Add framework services.
             services.AddMvc();
 
-            //  *** se quiser mudar repositorio - assim não preciso de mudar mais nada que nao seja FakeProductRepository
-            // services.AddTransient<IProductRepository, FakeProductRepository>(); // mudado
+            //  *** se quiser mudar repositorio...
+            //- assim não preciso de mudar mais nada que nao seja FakeProductRepository
+            // services.AddTransient<IProductRepository, FakeProductRepository>(); // mudado!!
+
             // serviço 
-            // se fizesse com classe em vez de interface: IProductRepository
+            // se fizesse com classe em vez de interface: IProductRepository ...
             services.AddTransient<IProductRepository, EFProductRepository>();
 
             // configurar EF
