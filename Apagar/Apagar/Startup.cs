@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,10 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using SportsStore.Models;
-using Microsoft.EntityFrameworkCore;
 
-namespace SportsStore
+namespace Apagar
 {
     public class Startup
     {
@@ -33,23 +29,6 @@ namespace SportsStore
         {
             // Add framework services.
             services.AddMvc();
-
-            //  *** se quiser mudar repositorio...
-            //- assim não preciso de mudar mais nada que nao seja FakeProductRepository
-            // services.AddTransient<IProductRepository, FakeProductRepository>(); // mudado!!
-
-            // serviço 
-            // se fizesse com classe em vez de interface: IProductRepository ...
-            services.AddTransient<IProductRepository, EFProductRepository>();
-
-            // configurar EF
-            services.AddDbContext<ApplicationDbContext>(
-              options => options.UseSqlServer(
-                  // vou por nome da string connection do appsettings.jason
-                  Configuration.GetConnectionString("ConnectionStringSportsStore")
-              )
-          );
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,8 +55,6 @@ namespace SportsStore
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            // popular B:D.
-            SeedData.EnsurePopulated(app.ApplicationServices);
         }
     }
 }
