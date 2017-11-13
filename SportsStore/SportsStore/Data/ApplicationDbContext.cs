@@ -15,7 +15,7 @@ namespace SportsStore.Models
         public ApplicationDbContext(DbContextOptions options) : base(options) { }
 
         // config. base dados com os modelos: digo onde vou passar a BD
-        // tenho de fazer para cada tabela | Products representa a minha tabela produtos
+        // tenho de fazer para cada tabela 
         public DbSet<Product> Products { get; set; }
         // +++ aqui aparecem os DbSet<MyModels>  ???
     }

@@ -11,7 +11,7 @@ namespace SportsStore.Controllers
     {
         private IProductRepository repository;
 
-        // Controlador precisa de ir ao repositorio - vai aos serviços ver se existe um serviço para IProductRepository
+        // Controlador vai ver se existe um serviço para IProductRepository
         // dependency injection
         public ProductsController(IProductRepository repository) // construtor
         {
