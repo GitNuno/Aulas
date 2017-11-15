@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SportsStore.Models
 {
     // class DbContext mapea BD
-    // instancio esta classe nas minhas [EF(Mymodels)Repository:I(Mymodels)Repository] 
+    // instancio esta classe na minha [EFRepository:IRepository] 
     public class ApplicationDbContext : DbContext
     {
         // base(options) mm que super: cria BD com as options

@@ -21,8 +21,9 @@ namespace SportsStore.Models
             this.dbContext = dbContext;
         }
         // implement de IProductRepository ...
-        // vai buscar os produtos á tabela de produtos, posso agora criar um serviço no startup.cs
-        public IEnumerable<Product> Products => dbContext.Products;
+        // vai buscar os produtos á tabela de produtos, tenho de criar um serviço no startup.cs
         // +++ aqui aparecem os implement de IRepository (por cada IEnumerable<Mymodels> em IRepository)???
+        public IEnumerable<Product> Products => dbContext.Products;
+        
     }
 }

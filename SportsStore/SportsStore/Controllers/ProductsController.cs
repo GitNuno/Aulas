@@ -26,7 +26,8 @@ namespace SportsStore.Controllers
         //   .[view List]: é do tipo IEnumerable<Product> e exibe campos de Product com: foreach (Product p in Model)
         public ViewResult List()
         {
-            return View(repository.Products);
+            return View(repository.Products); // passa produtos para view: @model IEnumerable<Product>
+
         }
     }
 }
