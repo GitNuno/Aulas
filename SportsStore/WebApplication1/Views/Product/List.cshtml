@@ -1,0 +1,21 @@
+@*view models permitem passar informação combinada para as view*@
+@*para além dos produtos passo tb info sobre a paginação*@
+@*ver _viewImports*@
+@model ProductsListViewModel 
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h2>List</h2>
+
+ @*nota: já não está a passar um IEnumerable, isso implica mudar isso no controlador*@
+@foreach(Product p in Model.Products)
+{
+    <div>
+    <h3>@p.Name</h3>
+    <p>@p.Description</p>
+    <h4>@p.Price.ToString("c")</h4>
+    </div>
+    <hr/>
+}
