@@ -4730,7 +4730,7 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "SportStore/1.0.0": {
+      "SportsStore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
@@ -4750,10 +4750,10 @@
           "Moq": "4.7.99"
         },
         "compile": {
-          "bin/placeholder/SportStore.dll": {}
+          "bin/placeholder/SportsStore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SportStore.dll": {}
+          "bin/placeholder/SportsStore.dll": {}
         }
       }
     }
@@ -11994,17 +11994,18 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "SportStore/1.0.0": {
+    "SportsStore/1.0.0": {
       "type": "project",
-      "path": "../WebApplication1/SportStore.csproj",
-      "msbuildProject": "../WebApplication1/SportStore.csproj"
+      "path": "../SportsStore/SportsStore.csproj",
+      "msbuildProject": "../SportsStore/SportsStore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
+      "Microsoft.Composition >= 1.0.31",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170425-07",
       "Microsoft.NETCore.App >= 1.1.2",
-      "SportStore >= 1.0.0",
+      "SportsStore >= 1.0.0",
       "xunit >= 2.2.0",
       "xunit.runner.visualstudio >= 2.2.0"
     ]
@@ -12039,8 +12040,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\WebApplication1\\SportStore.csproj": {
-              "projectPath": "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\WebApplication1\\SportStore.csproj"
+            "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\SportsStore\\SportsStore.csproj": {
+              "projectPath": "C:\\programacao_internet\\Aulas\\Aulas\\SportsStore\\SportsStore\\SportsStore.csproj"
             }
           }
         }
@@ -12065,6 +12066,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "15.3.0-preview-20170425-07"
+          },
+          "Microsoft.Composition": {
+            "target": "Package",
+            "version": "1.0.31"
           }
         }
       }

@@ -8,8 +8,9 @@
     ".NETCoreApp,Version=v1.1": {
       "sportsstore.tests/1.0.0": {
         "dependencies": {
+          "Microsoft.Composition": "1.0.31",
           "Microsoft.NET.Test.Sdk": "15.3.0-preview-20170425-07",
-          "SportStore": "1.0.0",
+          "SportsStore": "1.0.0",
           "xunit": "2.2.0",
           "xunit.runner.visualstudio": "2.2.0"
         },
@@ -1460,7 +1461,7 @@
           "Microsoft.TestPlatform.ObjectModel": "15.3.0-preview-20170425-07"
         }
       },
-      "sportstore/1.0.0": {
+      "sportsstore/1.0.0": {
         "dependencies": {
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore": "1.1.2",
@@ -1477,7 +1478,7 @@
           "Moq": "4.7.99"
         },
         "runtime": {
-          "SportStore.dll": {}
+          "SportsStore.dll": {}
         }
       }
     }
@@ -2482,7 +2483,7 @@
       "path": "xunit.runner.visualstudio/2.2.0",
       "hashPath": "xunit.runner.visualstudio.2.2.0.nupkg.sha512"
     },
-    "sportstore/1.0.0": {
+    "sportsstore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
